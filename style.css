@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* &-----Navbar Css------ */
+.navbar {
+    height: 90px;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    position: fixed;
+    top: 0px;
+}
+
+.log{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.navbarList ul{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    list-style-type: none;
+   
+}
+.navbarList>ul>li{
+    display: flex;
+   text-align: center;
+   font-size: larger;
+   font-weight: 400;
+
+}
+
+.navbarList ul li ul{
+    display: none;
+}
+.navbarList ul li:hover ul{
+    display: block;
+}
+
+.navbarList a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    transition: color 0.2s ease;
+}
+
+.navbarList a:hover{
+    color: blue;
+}
+/* !-------Main Content-------- */
+
+.main {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.hero>h1{
+    color: rgb(34, 34, 224);
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero>h1 {
+    animation: slideIn 5s infinite;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* -------Footer Css------- */
+
+.footer{
+    height: 150px;
+    width: 100%;
+    background-color: rgb(225, 219, 245);
+    position:fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstHalf ul {
+    list-style-type: none;
+    font-size: small;
+    columns: 2;
+}
+
+.firstHalf a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.firstHalf ul li {
+    padding: 4px;
+}
